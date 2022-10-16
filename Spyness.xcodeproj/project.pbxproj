@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		157712DD28F9ED69000D2957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712DC28F9ED69000D2957 /* AppDelegate.swift */; };
+		157712DF28F9EDB3000D2957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712DE28F9EDB3000D2957 /* SceneDelegate.swift */; };
+		15ED3ECD28F86B2600F5E3C4 /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ECC28F86B2600F5E3C4 /* MainTitleView.swift */; };
+		15ED3ECF28F86F4B00F5E3C4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ECE28F86F4B00F5E3C4 /* MainView.swift */; };
+		15ED3ED128F8936400F5E3C4 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED028F8936300F5E3C4 /* DAO.swift */; };
+		15ED3ED328F8C6FE00F5E3C4 /* ClueCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED228F8C6FE00F5E3C4 /* ClueCardView.swift */; };
+		15ED3ED528F8D43A00F5E3C4 /* ClueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED428F8D43A00F5E3C4 /* ClueModel.swift */; };
+		15ED3ED728F8DBA700F5E3C4 /* MyCluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED628F8DBA700F5E3C4 /* MyCluesView.swift */; };
+		15ED3ED928F8E57200F5E3C4 /* ClueSolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED828F8E57100F5E3C4 /* ClueSolvingView.swift */; };
+		15ED3EDB28F8E5FB00F5E3C4 /* LetterBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3EDA28F8E5FB00F5E3C4 /* LetterBoxView.swift */; };
+		15ED3EDD28F8E77300F5E3C4 /* MatrixGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3EDC28F8E77300F5E3C4 /* MatrixGridView.swift */; };
+		15F7E34328F8545000B3D710 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E34228F8545000B3D710 /* Preview Assets.xcassets */; };
+		15F7E36A28F8565F00B3D710 /* NFCUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E36928F8565F00B3D710 /* NFCUtilities.swift */; };
+		15F7E36C28F8567B00B3D710 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E36B28F8567B00B3D710 /* Extensions.swift */; };
+		15F7E37328F856BC00B3D710 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E37028F856BC00B3D710 /* AdminView.swift */; };
+		15F7E37428F856BC00B3D710 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E37128F856BC00B3D710 /* ScanView.swift */; };
+		15F7E37628F8571D00B3D710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E37528F8571D00B3D710 /* Assets.xcassets */; };
+		15F7E37828F8574000B3D710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E37728F8574000B3D710 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		157712DC28F9ED69000D2957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		157712DE28F9EDB3000D2957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15ED3ECC28F86B2600F5E3C4 /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
+		15ED3ECE28F86F4B00F5E3C4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		15ED3ED028F8936300F5E3C4 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		15ED3ED228F8C6FE00F5E3C4 /* ClueCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueCardView.swift; sourceTree = "<group>"; };
+		15ED3ED428F8D43A00F5E3C4 /* ClueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueModel.swift; sourceTree = "<group>"; };
+		15ED3ED628F8DBA700F5E3C4 /* MyCluesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCluesView.swift; sourceTree = "<group>"; };
+		15ED3ED828F8E57100F5E3C4 /* ClueSolvingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueSolvingView.swift; sourceTree = "<group>"; };
+		15ED3EDA28F8E5FB00F5E3C4 /* LetterBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxView.swift; sourceTree = "<group>"; };
+		15ED3EDC28F8E77300F5E3C4 /* MatrixGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixGridView.swift; sourceTree = "<group>"; };
+		15F7E33728F8544E00B3D710 /* Spyness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spyness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F7E34028F8545000B3D710 /* Spyness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spyness.entitlements; sourceTree = "<group>"; };
+		15F7E34228F8545000B3D710 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15F7E36928F8565F00B3D710 /* NFCUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtilities.swift; sourceTree = "<group>"; };
+		15F7E36B28F8567B00B3D710 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		15F7E37028F856BC00B3D710 /* AdminView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		15F7E37128F856BC00B3D710 /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		15F7E37528F8571D00B3D710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F7E37728F8574000B3D710 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15F7E38128F85C3800B3D710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F7E33428F8544E00B3D710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15ED3EDE28F8F9B800F5E3C4 /* ClueSolving */ = {
+			isa = PBXGroup;
+			children = (
+				15ED3EDA28F8E5FB00F5E3C4 /* LetterBoxView.swift */,
+				15ED3EDC28F8E77300F5E3C4 /* MatrixGridView.swift */,
+			);
+			path = ClueSolving;
+			sourceTree = "<group>";
+		};
+		15F7E32E28F8544E00B3D710 = {
+			isa = PBXGroup;
+			children = (
+				15F7E33928F8544E00B3D710 /* Spyness */,
+				15F7E33828F8544E00B3D710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15F7E33828F8544E00B3D710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E33728F8544E00B3D710 /* Spyness.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F7E33928F8544E00B3D710 /* Spyness */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E38128F85C3800B3D710 /* Info.plist */,
+				157712DE28F9EDB3000D2957 /* SceneDelegate.swift */,
+				157712DC28F9ED69000D2957 /* AppDelegate.swift */,
+				15F7E36528F8562F00B3D710 /* Utilities */,
+				15F7E36728F8563D00B3D710 /* Views */,
+				15F7E36628F8563900B3D710 /* Model */,
+				15F7E36828F8564800B3D710 /* Resources */,
+				15F7E34128F8545000B3D710 /* Preview Content */,
+			);
+			path = Spyness;
+			sourceTree = "<group>";
+		};
+		15F7E34128F8545000B3D710 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E34228F8545000B3D710 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15F7E36528F8562F00B3D710 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E36928F8565F00B3D710 /* NFCUtilities.swift */,
+				15F7E36B28F8567B00B3D710 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		15F7E36628F8563900B3D710 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15ED3ED428F8D43A00F5E3C4 /* ClueModel.swift */,
+				15ED3ED028F8936300F5E3C4 /* DAO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15F7E36728F8563D00B3D710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15ED3EDE28F8F9B800F5E3C4 /* ClueSolving */,
+				15F7E37028F856BC00B3D710 /* AdminView.swift */,
+				15F7E37128F856BC00B3D710 /* ScanView.swift */,
+				15ED3ECC28F86B2600F5E3C4 /* MainTitleView.swift */,
+				15ED3ECE28F86F4B00F5E3C4 /* MainView.swift */,
+				15ED3ED228F8C6FE00F5E3C4 /* ClueCardView.swift */,
+				15ED3ED628F8DBA700F5E3C4 /* MyCluesView.swift */,
+				15ED3ED828F8E57100F5E3C4 /* ClueSolvingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15F7E36828F8564800B3D710 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E34028F8545000B3D710 /* Spyness.entitlements */,
+				15F7E37728F8574000B3D710 /* LaunchScreen.storyboard */,
+				15F7E37528F8571D00B3D710 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15F7E33628F8544E00B3D710 /* Spyness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F7E35C28F8545000B3D710 /* Build configuration list for PBXNativeTarget "Spyness" */;
+			buildPhases = (
+				15F7E33328F8544E00B3D710 /* Sources */,
+				15F7E33428F8544E00B3D710 /* Frameworks */,
+				15F7E33528F8544E00B3D710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spyness;
+			productName = Spyness;
+			productReference = 15F7E33728F8544E00B3D710 /* Spyness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15F7E32F28F8544E00B3D710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					15F7E33628F8544E00B3D710 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 15F7E33228F8544E00B3D710 /* Build configuration list for PBXProject "Spyness" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15F7E32E28F8544E00B3D710;
+			productRefGroup = 15F7E33828F8544E00B3D710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15F7E33628F8544E00B3D710 /* Spyness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15F7E33528F8544E00B3D710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7E37828F8574000B3D710 /* LaunchScreen.storyboard in Resources */,
+				15F7E37628F8571D00B3D710 /* Assets.xcassets in Resources */,
+				15F7E34328F8545000B3D710 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F7E33328F8544E00B3D710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15ED3ECF28F86F4B00F5E3C4 /* MainView.swift in Sources */,
+				15ED3ED728F8DBA700F5E3C4 /* MyCluesView.swift in Sources */,
+				15ED3ED928F8E57200F5E3C4 /* ClueSolvingView.swift in Sources */,
+				15ED3EDB28F8E5FB00F5E3C4 /* LetterBoxView.swift in Sources */,
+				15F7E36A28F8565F00B3D710 /* NFCUtilities.swift in Sources */,
+				15F7E37328F856BC00B3D710 /* AdminView.swift in Sources */,
+				157712DF28F9EDB3000D2957 /* SceneDelegate.swift in Sources */,
+				157712DD28F9ED69000D2957 /* AppDelegate.swift in Sources */,
+				15ED3ED328F8C6FE00F5E3C4 /* ClueCardView.swift in Sources */,
+				15F7E36C28F8567B00B3D710 /* Extensions.swift in Sources */,
+				15ED3ED128F8936400F5E3C4 /* DAO.swift in Sources */,
+				15ED3EDD28F8E77300F5E3C4 /* MatrixGridView.swift in Sources */,
+				15F7E37428F856BC00B3D710 /* ScanView.swift in Sources */,
+				15ED3ECD28F86B2600F5E3C4 /* MainTitleView.swift in Sources */,
+				15ED3ED528F8D43A00F5E3C4 /* ClueModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15F7E35A28F8545000B3D710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15F7E35B28F8545000B3D710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		15F7E35D28F8545000B3D710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spyness/Resources/Spyness.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spyness/Preview Content\"";
+				DEVELOPMENT_TEAM = 32H23754C8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spyness/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 nfc";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julia.Spyness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		15F7E35E28F8545000B3D710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spyness/Resources/Spyness.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spyness/Preview Content\"";
+				DEVELOPMENT_TEAM = 32H23754C8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spyness/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 nfc";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julia.Spyness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15F7E33228F8544E00B3D710 /* Build configuration list for PBXProject "Spyness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E35A28F8545000B3D710 /* Debug */,
+				15F7E35B28F8545000B3D710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F7E35C28F8545000B3D710 /* Build configuration list for PBXNativeTarget "Spyness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E35D28F8545000B3D710 /* Debug */,
+				15F7E35E28F8545000B3D710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15F7E32F28F8544E00B3D710 /* Project object */;
+}
