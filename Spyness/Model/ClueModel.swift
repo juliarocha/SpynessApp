@@ -8,7 +8,7 @@
 import Foundation
 import CoreNFC
 
-struct Clue: Codable {
+struct Clue: Codable, Hashable {
     
     let clue: String
     let solution: String

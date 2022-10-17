@@ -4,6 +4,8 @@ struct ScanView: View {
   @State private var clueModel: Clue?
 
   @State private var hasClue =  true
+    
+    
 
   var body: some View {
     ZStack {
@@ -12,6 +14,7 @@ struct ScanView: View {
             ScanButton().onTapGesture {
                 NFCUtility.performAction(.readClue) { clue in
                     self.clueModel = try? clue.get()
+                    DAO.instance?.addClue(clue: self.clueModel ?? Clue(nextLocation: "test", location: "test"))
                 }
             }
         } else {
@@ -33,6 +36,7 @@ struct ScanView: View {
     }.onAppear {
         NFCUtility.performAction(.readClue) { clue in
           self.clueModel = try? clue.get()
+          DAO.instance?.addClue(clue: self.clueModel ?? Clue(nextLocation: "test", location: "test"))
           self.hasClue = true
         }
     }

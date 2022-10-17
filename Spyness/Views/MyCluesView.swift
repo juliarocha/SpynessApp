@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct MyCluesView: View {
+    
+    @State private var myClues = DAO.instance?.getMyClues()
+    
     var body: some View {
         ZStack {
             BackgroundView()
             ScrollView(showsIndicators: true) {
                 VStack {
-                    ClueCardView(clueContent: "RECEPTION", location: "Start Station", solvedStatus: true)
-                    ClueCardView(clueContent: "LBOLY", location: "Reception", solvedStatus: false)
+                    if let myClues = DAO.instance?.getMyClues() {
+                        ForEach(myClues, id: \.self) { clue in
+                            ClueCardView(clueContent: clue.clue, location: clue.location, solvedStatus: clue.status)
+                        }
+                        if myClues.isEmpty {
+                            Text("You have no clues yet, take a look around!").foregroundColor(.white).lineSpacing(10).padding(.top, 300)
+                        }
+                    }
                 }
             }.padding([.top, .bottom], 60)
         }

@@ -32,7 +32,7 @@ struct MainTitleView: View {
                         }
                     )
                 }
-            }
+        }
         .navigationBarHidden(true)
     }
     
