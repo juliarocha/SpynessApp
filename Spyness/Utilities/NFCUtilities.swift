@@ -31,7 +31,8 @@ enum NFCError: LocalizedError {
 class NFCUtility: NSObject {
   enum NFCAction {
     case readClue
-      case setupLocation(locationName: String, nextLocationName: String)
+    case setupLocation(locationName: String, nextLocationName: String)
+    case savePoints(points: Int)
 
     var alertMessage: String {
       switch self {
@@ -39,6 +40,8 @@ class NFCUtility: NSObject {
         return "Place tag near iPhone to read the clue."
       case .setupLocation(let locationName, let nextLocationName):
         return "Place tag near iPhone to setup \(locationName) and clue to \(nextLocationName)."
+      case .savePoints:
+          return "Place tag near iPhone to save your points."
       }
     }
   }
@@ -146,6 +149,8 @@ extension NFCUtility: NFCNDEFReaderSessionDelegate {
           self.createLocation(Clue(nextLocation: nextLocationName, location: locationName), tag: tag)
         case (.readWrite, .readClue):
           self.read(tag: tag)
+        case (.readWrite, .savePoints(let points)):
+            self.savePoints(points, tag: tag)
         default:
           return
         }
@@ -250,4 +255,46 @@ extension NFCUtility {
         }
     }
   }
+    
+    private func savePoints(_ points: Int, tag: NFCNDEFTag) {
+      read(tag: tag) { _ in
+          // 1
+          let alertMessage = "Successfully saved points."
+          
+          // 2
+          let jsonEncoder = JSONEncoder()
+          guard let customData = try? jsonEncoder.encode("\(points)") else {
+            self.handleError(NFCError.invalidated(message: "Bad data"))
+            return
+          }
+          
+          // 3
+          let payload = NFCNDEFPayload(
+            format: .unknown,
+            type: Data(),
+            identifier: Data(),
+            payload: customData)
+          // 4
+          let message = NFCNDEFMessage(records: [payload])
+          
+          tag.queryNDEFStatus { _, capacity, _ in
+            // 1
+            guard message.length <= capacity else {
+              self.handleError(NFCError.invalidPayloadSize)
+              return
+            }
+
+            // 2
+            tag.writeNDEF(message) { error in
+              if let error = error {
+                self.handleError(error)
+                return
+              }
+              if self.completion != nil {
+                self.read(tag: tag, alertMessage: alertMessage)
+              }
+            }
+          }
+      }
+    }
 }

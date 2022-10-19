@@ -2,31 +2,42 @@
 //  MatrixGrid.swift
 //  Spyness
 //
-//  Created by Julia Rocha on 14/10/22.
+//  Created by Julia Rocha on 18/10/22.
 //
 
 import SwiftUI
 
-struct MatrixGrid: View {
-    let rows = [GridItem(.fixed(30))]
-    let clue = "RECEPTION"
+struct MatrixGrid<Content: View>: View {
 
-    var body: some View {
-        LazyHGrid(rows: rows) {
-            ForEach(Array(clue.enumerated()), id: \.offset) { character in
-                LetterBox(letter: character.element, evaluation: .match)
-                }
-        }
+    typealias GridItemFactory = (_ row: Int, _ column: Int) -> Content
+
+    let width: Int
+    let height: Int
+    let spacing: CGFloat
+    let gridItemFactory: GridItemFactory
+
+    private var columns: [GridItem] {
+        .init(repeating: GridItem(.flexible()), count: width)
     }
 
-    private func emoji(_ value: Int) -> String {
-        guard let scalar = UnicodeScalar(value) else { return "?" }
-        return String(Character(scalar))
+    var body: some View {
+        LazyVGrid(columns: columns, alignment: .center, spacing: spacing) {
+            ForEach(0..<height) { row in
+                ForEach(0..<width) { column in
+                    gridItemFactory(row, column)
+                        .id("MatrixGrid_Item_\(row)×\(column)")
+                }
+            }
+        }
     }
 }
 
 struct MatrixGrid_Previews: PreviewProvider {
     static var previews: some View {
-        MatrixGrid()
+        MatrixGrid(width: 9, height: 6, spacing: 8) { row, column in
+            LetterBox(letter: "A", evaluation: nil)
+        }
+        .padding()
     }
 }
+

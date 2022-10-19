@@ -26,6 +26,7 @@ struct MainBackgroundView: View {
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
                     .scaleEffect(1.2)
+                    
                 VStack (spacing: 80) {
                     
                     Image("icon")

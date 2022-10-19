@@ -13,8 +13,7 @@ struct MainTitleView: View {
         NavigationView {
             ZStack {
                 BackgroundView()
-                VStack(spacing: 80) {
-                    // Text("Score: \(score)")
+                VStack(spacing: 60) {
 
                     NavigationLink(destination: MyCluesView()) {
                         MenuItemView(item: "Clues")
@@ -23,15 +22,35 @@ struct MainTitleView: View {
                     NavigationLink(destination: ScanView()) {
                         MenuItemView(item: "Scan")
                     }
+
                 }.foregroundStyle(.ultraThickMaterial)
-                .navigationTitle("Mission 1")
-                .navigationBarItems(
-                    trailing:
-                        NavigationLink(destination: AdminView()) {
-                            Image(systemName: "lock").foregroundColor(.white)
-                        }
-                    )
-                }
+                    .padding(.bottom, 50)
+                VStack (spacing: 80) {
+                    Spacer()
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 200, height: 80)
+                            .foregroundColor(Color(.systemGray))
+                            .blendMode(.hardLight)
+                            .cornerRadius(9, corners: [.topLeft, .topRight])
+                        Text("\(DAO.instance?.getMyPoints() ?? 0) points")
+                            .foregroundColor(.white)
+                            .padding(.bottom, 20)
+                    }
+                    
+                }.padding(.bottom, 50)
+                    .onTapGesture {
+                        NFCUtility.performAction(.savePoints(points: DAO.instance?.getMyPoints() ?? 0))
+                    }
+
+            }
+            .navigationTitle("Mission 1")
+            .navigationBarItems(
+                trailing:
+                    NavigationLink(destination: AdminView()) {
+                        Image(systemName: "lock").foregroundColor(.white)
+                    }
+                )
         }
         .navigationBarHidden(true)
     }

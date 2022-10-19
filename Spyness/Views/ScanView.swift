@@ -13,8 +13,8 @@ struct ScanView: View {
         if (clueModel == nil) {
             ScanButton().onTapGesture {
                 NFCUtility.performAction(.readClue) { clue in
-                    self.clueModel = try? clue.get()
                     DAO.instance?.addClue(clue: self.clueModel ?? Clue(nextLocation: "test", location: "test"))
+                    clueModel = DAO.instance?.getMyClues().last
                 }
             }
         } else {
@@ -22,7 +22,7 @@ struct ScanView: View {
                 VStack (spacing: 60){
                     Text("**You found a new clue!**\nTap on it to go solve it!").foregroundColor(.white).lineSpacing(10)
                     clueModel.map { clue in
-                        ClueCardView(clueContent: clue.clue, location: clue.location, solvedStatus: clue.status)
+                        ClueCardView(clueContent: clue)
                     }
                 }.padding(.bottom, 20)
                 

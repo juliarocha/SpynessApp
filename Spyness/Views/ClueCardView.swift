@@ -9,9 +9,23 @@ import SwiftUI
 
 struct ClueCardView: View {
     
-    @State public var clueContent = "RECEPTION"
-    @State public var location = "Start Station"
-    @State public var solvedStatus = true
+    @State public var clueContent: Clue
+    
+    var body: some View {
+        if !clueContent.status {
+            NavigationLink(destination: WordleBoard(clueContent: clueContent)) {
+                ClueViewContent(clueContent: clueContent)
+            }
+        } else {
+            ClueViewContent(clueContent: clueContent)
+        }
+
+    }
+}
+
+struct ClueViewContent: View {
+    
+    @State public var clueContent: Clue
     
     var body: some View {
         ZStack {
@@ -20,13 +34,16 @@ struct ClueCardView: View {
                 .foregroundColor(Color(.systemGray))
                 .shadow(color: .black, radius: 5, x: 5, y: 5)
                 .blendMode(.hardLight)
-            StatusLabel(solvedStatus: self.solvedStatus)
+            StatusLabel(solvedStatus: clueContent.status)
             VStack (alignment: .leading, spacing: 60) {
-                Text("**Clue: \(clueContent)**").foregroundColor(.white)
-                Text("Found in: \(location)").foregroundColor(.white)
+                Text("**Clue: \(clueContent.clue)**").foregroundColor(.white)
+                Text("Found in: \(clueContent.location)").foregroundColor(.white)
             }.padding(.leading, 30)
         }.frame(width: 300, height: 200)
             .foregroundStyle(.ultraThickMaterial)
+            .onAppear{
+                DAO.instance?.currentClue = clueContent
+            }
     }
 }
 
@@ -67,6 +84,6 @@ struct StatusLabel: View {
 
 struct ClueCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ClueCardView()
+        ClueCardView(clueContent: Clue(nextLocation: "test", location: "test2"))
     }
 }

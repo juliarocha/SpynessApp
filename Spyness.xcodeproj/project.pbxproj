@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		157712DD28F9ED69000D2957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712DC28F9ED69000D2957 /* AppDelegate.swift */; };
 		157712DF28F9EDB3000D2957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712DE28F9EDB3000D2957 /* SceneDelegate.swift */; };
+		157712E128FF54ED000D2957 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712E028FF54ED000D2957 /* GameView.swift */; };
+		157712E328FF553B000D2957 /* WordleBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157712E228FF553B000D2957 /* WordleBoardView.swift */; };
 		15ED3ECD28F86B2600F5E3C4 /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ECC28F86B2600F5E3C4 /* MainTitleView.swift */; };
 		15ED3ECF28F86F4B00F5E3C4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ECE28F86F4B00F5E3C4 /* MainView.swift */; };
 		15ED3ED128F8936400F5E3C4 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED3ED028F8936300F5E3C4 /* DAO.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		157712DC28F9ED69000D2957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		157712DE28F9EDB3000D2957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		157712E028FF54ED000D2957 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		157712E228FF553B000D2957 /* WordleBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleBoardView.swift; sourceTree = "<group>"; };
 		15ED3ECC28F86B2600F5E3C4 /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
 		15ED3ECE28F86F4B00F5E3C4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		15ED3ED028F8936300F5E3C4 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			children = (
 				15ED3EDA28F8E5FB00F5E3C4 /* LetterBoxView.swift */,
 				15ED3EDC28F8E77300F5E3C4 /* MatrixGridView.swift */,
+				157712E028FF54ED000D2957 /* GameView.swift */,
+				157712E228FF553B000D2957 /* WordleBoardView.swift */,
 			);
 			path = ClueSolving;
 			sourceTree = "<group>";
@@ -234,10 +240,12 @@
 				157712DD28F9ED69000D2957 /* AppDelegate.swift in Sources */,
 				15ED3ED328F8C6FE00F5E3C4 /* ClueCardView.swift in Sources */,
 				15F7E36C28F8567B00B3D710 /* Extensions.swift in Sources */,
+				157712E328FF553B000D2957 /* WordleBoardView.swift in Sources */,
 				15ED3ED128F8936400F5E3C4 /* DAO.swift in Sources */,
 				15ED3EDD28F8E77300F5E3C4 /* MatrixGridView.swift in Sources */,
 				15F7E37428F856BC00B3D710 /* ScanView.swift in Sources */,
 				15ED3ECD28F86B2600F5E3C4 /* MainTitleView.swift in Sources */,
+				157712E128FF54ED000D2957 /* GameView.swift in Sources */,
 				15ED3ED528F8D43A00F5E3C4 /* ClueModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

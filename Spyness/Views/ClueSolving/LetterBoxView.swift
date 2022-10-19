@@ -26,6 +26,7 @@ struct LetterBox: View {
             if let letter = letter {
                 Text(String(letter))
                     .font(.system(size: 24, weight: .bold, design: .rounded))
+                    .foregroundColor(.black)
             }
         }
     }
@@ -35,6 +36,6 @@ struct LetterBox_Previews: PreviewProvider {
     static var previews: some View {
         LetterBox(letter: .init("A"), evaluation: .match)
             .previewLayout(.fixed(width: 100, height: 100))
-            .environment(\.colorScheme, .light)
+//            .environment(\.colorScheme, .light)
     }
 }

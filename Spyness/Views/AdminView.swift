@@ -5,7 +5,7 @@ struct AdminView: View {
     @State private var nextLocationName = ""
 
     var body: some View {
-    NavigationView {
+    
       Form {
         Section(
           header: Text("Location Setup"),
@@ -29,9 +29,11 @@ struct AdminView: View {
           .disabled(nextLocationName.isEmpty)
         }
         // swiftlint:enable multiple_closures_with_trailing_closure multiline_arguments
+      }.onTapGesture {
+          endEditing()
       }
-      .navigationBarTitle("Administration")
-    }
+      
+    
     .navigationViewStyle(StackNavigationViewStyle())
     }
 

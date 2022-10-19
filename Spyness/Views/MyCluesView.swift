@@ -18,7 +18,7 @@ struct MyCluesView: View {
                 VStack {
                     if let myClues = DAO.instance?.getMyClues() {
                         ForEach(myClues, id: \.self) { clue in
-                            ClueCardView(clueContent: clue.clue, location: clue.location, solvedStatus: clue.status)
+                            ClueCardView(clueContent: clue)
                         }
                         if myClues.isEmpty {
                             Text("You have no clues yet, take a look around!").foregroundColor(.white).lineSpacing(10).padding(.top, 300)
