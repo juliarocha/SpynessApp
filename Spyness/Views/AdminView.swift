@@ -29,8 +29,6 @@ struct AdminView: View {
           .disabled(nextLocationName.isEmpty)
         }
         // swiftlint:enable multiple_closures_with_trailing_closure multiline_arguments
-      }.onTapGesture {
-          endEditing()
       }
       
     

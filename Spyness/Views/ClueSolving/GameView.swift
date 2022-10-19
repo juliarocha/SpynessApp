@@ -25,18 +25,18 @@ struct WordleBoard: View {
         ZStack {
             NavigationLink(destination: MainTitleView(), isActive: self.$solvedClue) { EmptyView() }
             BackgroundView()
-            VStack (spacing: 80) {
-                ZStack {
-                    Rectangle()
-                        .frame(width: 200, height: 50)
-                        .foregroundColor(Color(.systemGray))
-                        .blendMode(.hardLight)
-                        .cornerRadius(9, corners: [.topLeft, .topRight, .bottomLeft, .bottomRight])
-                    Text("Points: \(points)")
-                        .foregroundColor(.white)
-                }
-                Spacer()
-            }.padding(.top, 110)
+//            VStack (spacing: 80) {
+//                ZStack {
+//                    Rectangle()
+//                        .frame(width: 200, height: 50)
+//                        .foregroundColor(Color(.systemGray))
+//                        .blendMode(.hardLight)
+//                        .cornerRadius(9, corners: [.topLeft, .topRight, .bottomLeft, .bottomRight])
+//                    Text("Points: \(points)")
+//                        .foregroundColor(.white)
+//                }
+//                Spacer()
+//            }.padding(.top, 110)
             VStack {
                 Text("Unscramble the letters to discover the location of your next clue!")
                     .foregroundColor(.white)
@@ -89,7 +89,7 @@ struct WordleBoard: View {
             Button("OK", role: .none) {
                 viewModel.solved = false
                 DAO.instance?.solveClue(clue: clueContent)
-                DAO.instance?.addPoints(points: self.points)
+//                DAO.instance?.addPoints(points: self.points)
                 self.solvedClue = true
             }
         }

@@ -25,23 +25,6 @@ struct MainTitleView: View {
 
                 }.foregroundStyle(.ultraThickMaterial)
                     .padding(.bottom, 50)
-                VStack (spacing: 80) {
-                    Spacer()
-                    ZStack {
-                        Rectangle()
-                            .frame(width: 200, height: 80)
-                            .foregroundColor(Color(.systemGray))
-                            .blendMode(.hardLight)
-                            .cornerRadius(9, corners: [.topLeft, .topRight])
-                        Text("\(DAO.instance?.getMyPoints() ?? 0) points")
-                            .foregroundColor(.white)
-                            .padding(.bottom, 20)
-                    }
-                    
-                }.padding(.bottom, 50)
-                    .onTapGesture {
-                        NFCUtility.performAction(.savePoints(points: DAO.instance?.getMyPoints() ?? 0))
-                    }
 
             }
             .navigationTitle("Mission 1")

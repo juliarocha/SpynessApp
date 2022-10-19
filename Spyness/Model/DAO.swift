@@ -14,13 +14,10 @@ struct DAO: Codable {
     
     private var myClues:[Clue]
     
-    private var myPoints: Int
-    
     public var currentClue: Clue?
     
     private init? () {
         self.myClues = []
-        self.myPoints = 10
     }
     
     
@@ -30,14 +27,6 @@ struct DAO: Codable {
     
     public mutating func addClue(clue: Clue) {
         myClues.append(clue)
-    }
-    
-    public func getMyPoints() -> Int {
-        return myPoints
-    }
-    
-    public mutating func addPoints(points: Int) {
-        myPoints += points
     }
     
     public mutating func solveClue(clue: Clue) {
